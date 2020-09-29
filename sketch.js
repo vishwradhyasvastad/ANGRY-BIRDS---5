@@ -75,3 +75,11 @@ function mouseDragged(){
 function mouseReleased(){
     slingshot.fly();
 }
+
+function keyPressed(){
+    console.log("space key is pressed")
+    if(keyCode === 32){
+        slingshot.attach(bird.body);
+    }
+}
+
